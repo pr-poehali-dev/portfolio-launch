@@ -151,61 +151,128 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Skills & Experience Section */}
       <section id="skills" className="py-16 bg-muted/50 animate-slide-up">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-['Montserrat'] mb-4">Ключевые компетенции</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold font-['Montserrat'] mb-4">Опыт и экспертиза</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Профессиональные навыки, накопленные за годы работы в индустрии
+              Широкий спектр профессиональных навыков для решения любых творческих задач
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {skills.map((skill, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg hover:scale-105 transition-all duration-300 animate-scale-in">
-                <CardContent className="p-0">
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <h3 className="font-semibold text-lg">{skill.name}</h3>
-                      <p className="text-sm text-muted-foreground">{skill.experience}</p>
-                    </div>
-                    <Badge variant="secondary" className="text-xs">
-                      {skill.level}%
-                    </Badge>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Graphic Design Block */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                  <Icon name="Palette" size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold font-['Montserrat']">Графический дизайн</h3>
+                  <p className="text-primary font-semibold">15+ лет опыта</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="bg-card p-4 rounded-lg border">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium">Adobe Photoshop</span>
+                    <Badge variant="secondary">Эксперт</Badge>
                   </div>
-                  <div className="w-full bg-muted rounded-full h-2">
-                    <div 
-                      className="bg-primary h-2 rounded-full transition-all duration-1000"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+                  <p className="text-sm text-muted-foreground">Ретушь, сложная графика, подготовка к печати</p>
+                </div>
+                
+                <div className="bg-card p-4 rounded-lg border">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium">CorelDRAW</span>
+                    <Badge variant="secondary">Эксперт</Badge>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                  <p className="text-sm text-muted-foreground">Векторная графика, допечатная подготовка</p>
+                </div>
+                
+                <div className="bg-card p-4 rounded-lg border">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium">Брендинг</span>
+                    <Badge variant="outline" className="border-primary text-primary">Специализация</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Разработка фирменного стиля, логотипы</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Web Design Block */}
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                  <Icon name="Monitor" size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold font-['Montserrat']">Веб & UX/UI дизайн</h3>
+                  <p className="text-secondary font-semibold">2+ года активного развития</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="bg-card p-4 rounded-lg border">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium">Figma</span>
+                    <Badge variant="secondary">Продвинутый</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Дизайн-системы, компоненты, Auto Layout</p>
+                </div>
+                
+                <div className="bg-card p-4 rounded-lg border">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium">Tilda</span>
+                    <Badge variant="secondary">Продвинутый</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Zero Block, кастомный CSS/HTML, адаптивность</p>
+                </div>
+                
+                <div className="bg-card p-4 rounded-lg border">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="font-medium">HTML/CSS</span>
+                    <Badge variant="outline" className="border-secondary text-secondary">Изучаю</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Адаптивная вёрстка, кастомизация проектов</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Palette" size={24} className="text-white" />
+          {/* Key Advantages */}
+          <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold font-['Montserrat'] text-center mb-8">Ключевые преимущества</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Users" size={24} className="text-primary" />
+                </div>
+                <h4 className="font-semibold mb-2">Многозадачность</h4>
+                <p className="text-sm text-muted-foreground">Веду несколько проектов одновременно</p>
               </div>
-              <h3 className="font-semibold mb-2">Графический дизайн</h3>
-              <p className="text-sm text-muted-foreground">15+ лет опыта в разработке бренд-айдентики и подготовке макетов к печати</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Monitor" size={24} className="text-white" />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Target" size={24} className="text-primary" />
+                </div>
+                <h4 className="font-semibold mb-2">Бизнес-ориентация</h4>
+                <p className="text-sm text-muted-foreground">Понимаю задачи и цели клиента</p>
               </div>
-              <h3 className="font-semibold mb-2">Веб & UX/UI дизайн</h3>
-              <p className="text-sm text-muted-foreground">2+ года в проектировании пользовательских интерфейсов и адаптивных сайтов</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Zap" size={24} className="text-white" />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Lightbulb" size={24} className="text-primary" />
+                </div>
+                <h4 className="font-semibold mb-2">Креативность</h4>
+                <p className="text-sm text-muted-foreground">Нестандартные решения сложных задач</p>
               </div>
-              <h3 className="font-semibold mb-2">Комплексные решения</h3>
-              <p className="text-sm text-muted-foreground">От идеи до реализации — полный цикл создания визуальных продуктов</p>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Repeat" size={24} className="text-primary" />
+                </div>
+                <h4 className="font-semibold mb-2">Полный цикл</h4>
+                <p className="text-sm text-muted-foreground">От идеи до готового продукта</p>
+              </div>
             </div>
           </div>
         </div>
