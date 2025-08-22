@@ -278,6 +278,114 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Services Slider Section */}
+      <section className="py-16 bg-gradient-to-r from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold font-['Montserrat'] mb-6">С чем я работаю</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
+              Я создаю комплексные визуальные решения — от стратегии и концепции до технической реализации. 
+              Моя сила — в понимании полного цикла, что гарантирует проектам безупречный результат на любом носителе.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Graphic Design Block */}
+            <div className="bg-card rounded-2xl p-8 border shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-4xl">🎨</div>
+                <div>
+                  <h3 className="text-2xl font-bold font-['Montserrat'] text-primary">Графический дизайн и полиграфия</h3>
+                  <p className="text-sm text-muted-foreground font-semibold">(15+ лет)</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Разработка фирменного стиля и айдентики</h4>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Дизайн и макетирование полиграфии</h4>
+                    <p className="text-sm text-muted-foreground">от визиток до многостраничных каталогов</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Брендирование сувенирной продукции</h4>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Полная допечатная подготовка</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Web Design Block */}
+            <div className="bg-card rounded-2xl p-8 border shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-4xl">💻</div>
+                <div>
+                  <h3 className="text-2xl font-bold font-['Montserrat'] text-secondary">Веб-дизайн и разработка</h3>
+                  <p className="text-sm text-muted-foreground font-semibold">(2+ года)</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Проектирование UX и дизайн пользовательских интерфейсов (UI)</h4>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Создание и макетирование сайтов</h4>
+                    <p className="text-sm text-muted-foreground">разработка прототипов и дизайн-макетов</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Полноценная верстка на платформе Tilda</h4>
+                    <p className="text-sm text-muted-foreground">включая Zero Block и кастомный CSS</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Верстка сайтов с помощью кода</h4>
+                    <p className="text-sm text-muted-foreground">чистый HTML/CSS</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Разработка адаптивных и интерактивных прототипов</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
       <section id="portfolio" className="py-16">
         <div className="container mx-auto px-6">
